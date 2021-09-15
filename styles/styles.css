@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bona Nova', serif;
+}
+
+body {
+  position: relative;
+  padding-bottom: 165px;
+  min-height: 100vh;
+  color: #484040;
+
+  background-color: #F6F6F6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #847F7F;
+}
+
+.menu a:visited {
+  color: #847F7F;;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.container {
+  display: flex;
+  height: 70px;
+
+  background-color: #EFEFEF;
+}
+.navbar {
+  margin-left: auto;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.welcoming-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 25px;
+  padding-top: 300px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-page {
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 250px;
+  padding-left: 200px;
+  width: 90%;
+  font-size: 19px;
+}
+
+.about-me h2,
+.projects-container,
+#projects {
+  padding-left: 80px;
+}
+
+.box, .details {
+  padding-left: 50px;
+}
+
+.box > h3 {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+table {
+  display: flex;
+  padding-bottom: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 17px;
+}
+
+tr, td {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.data,
+.first-child,
+tr .work-place
+{
+  font-weight: bold;
+}
+
+tr .data {
+  display: flex;
+  align-items: flex-start;
+  width: 195px;
+}
+tr .second-child {
+  padding-bottom: 10px;
+  color:#847F7F;
+}
+
+span {
+  color:#847F7F;
+}
+
+tr .last-child  {
+  padding-bottom: 10px;
+}
+
+.about-me > h2, .projects > h2 {
+  padding-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.project-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 30px 30px 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.project-box:hover {
+  z-index: 1;
+  transform: scale(1.05);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-box .project a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-box .project a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: gray;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-box .project:hover a::before {
+  opacity: 1;
+}
+
+.project-box .project a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.project-box .prj3 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-box .project-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box .project-name h3 {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: normal;
+  z-index: 1;
+  transform: translateY(250px);
+}
+
+.project-box .project-name h3:hover {
+  cursor: pointer;
+}
+
+.project-box:hover .project-name h3 {
+  transform: translateY(0);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  color: #fff;
+  background-color: #847F7F;
+}
+
+footer .contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-box p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+}
+
+.contact a i {
+  font-size: 2rem;
+  transition: color .4s ease;
+}
+
+.contact a:hover i {
+  color: rgb(64, 169, 255);
+}
+
+.footer-bottom {
+  padding-top: 10px 0;
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 20px 0 8px 0;
+}
