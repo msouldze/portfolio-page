@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Bona Nova', serif;
+  font-family: Suisse Intl, S-CoreDream-3Light, sans-serif;
 }
 
 body {
@@ -11,37 +11,30 @@ body {
   min-height: 100vh;
   color: #484040;
 
-  background-color: #F6F6F6;
+  background-color: #F3F4F5;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
-}
-
-.menu a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #847F7F;
-}
-
-.menu a:visited {
-  color: #847F7F;;
-}
-
-.menu li {
-  list-style-type: none;
-  margin-right: 40px;
+  border-bottom: 1px solid #FFC000;
 }
 
 .container {
   display: flex;
-  height: 70px;
+  height: 100px;
+}
 
-  background-color: #EFEFEF;
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  font-size: 1rem;
+  color: #000;
 }
 
 .navbar {
@@ -54,197 +47,238 @@ header {
   align-items: center;
 }
 
+.menu a {
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.menu a:visited {
+  color: #000;
+}
+
+.menu a:hover {
+  color: #FFC000;
+  transition: color 0.5s ease-out;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
 .welcoming-page {
   width: 100vw;
   height: 100vh;
-}
-
-h1 {
-  margin-bottom: 25px;
-  padding-top: 300px;
-  font-size: 4rem;
-  letter-spacing: 4px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #A5ADB0;
 }
 
-.my-page {
-  text-transform: uppercase;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-box {
+.welcoming-page-text {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 250px;
-  padding-left: 40px;
-  width: 90%;
-  font-size: 19px;
-}
-
-#about-me,
-#projects {
-  padding-left: 160px;
-}
-
-.box, .details {
-  padding-left: 50px;
-}
-
-.box > h3 {
-  padding-bottom: 30px;
-  text-transform: uppercase;
-  font-size: 22px;
-}
-
-table {
-  display: flex;
-  padding: 10px;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 17px;
-}
-
-tr, td {
-  font-family: 'Nanum Gothic', sans-serif;
-}
-
-.data,
-.first-child,
-tr .work-place
-{
   font-weight: bold;
+  color: #fff;
 }
 
-tr .data {
-  display: flex;
-  align-items: flex-start;
-  width: 195px;
-}
-tr .second-child {
-  padding-bottom: 10px;
-  color:#847F7F;
+.welcoming-page-text h1,
+.welcoming-page-text div {
+  margin: 0 20px 0 auto;
+  width: 70%;
 }
 
-span {
-  color:#847F7F;
+.landing-photo-box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.landing-photo-box .photo-box {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
 }
 
-tr .last-child  {
-  padding-bottom: 10px;
+.photo-box img {
+  width: 100%;
+  height: auto;
 }
 
-.about-me-text > h2, .projects > h2 {
-  padding-bottom: 60px;
+#about-me {
+  z-index: 2;
+}
+
+.text {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.text p {
+  padding: 10px 0;
+}
+
+.topic {
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+
+.my-page {
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-size: 25px;
+}
+
+.bigBox {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  padding: 90px;
+  background-color: #F3F4F5;
+}
+
+.textBox {
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 56px;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+
+.boxName h3 {
+  text-transform: capitalize;
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education,
+.experience {
+  width: 50%;
+}
+
+.container-box {
+  padding-top: 50px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #FFC000;
+}
+
+.education .line {
+  width: 85%;
+}
+
+.box {
+  font-size: 14px;
+}
+
+.box .data {
+  margin-top: 10px
+}
+
+.education {
+  padding-right: 20px;
+}
+
+.boxName {
+  padding-bottom: 5px;
+}
+
+.details {
+  padding-top: 8px;
+}
+
+#certificate {
+  display: flex;
+  align-items: center
+}
+
+.first-children {
+  padding-right: 30px;
+}
+
+p {
+  color: #000;
 }
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
   padding-bottom: 50px;
 }
 
-.project-box {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 0 30px 30px 0;
-  overflow: hidden;
-  transition: 0.5s;
+.project-container {
+  margin: 50px 20px;
+  padding: 60px 40px;
+  border-radius: 15px;
+  -webkit-box-shadow: -1px 1px 15px 4px rgba(0,0,0,0.52); 
+  box-shadow: -1px 1px 15px 4px rgba(0, 0, 0, 0.52);
+  background-color: #fff;
 }
 
-.project-box:hover {
-  z-index: 1;
-  transform: scale(1.05);
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-
-.project-box .project a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.project-box .project a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: gray;
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.project-box .project:hover a::before {
-  opacity: 1;
-}
-
-.project-box .project a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.project-box .prj3 a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-box .project-name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-box .project-name h3 {
-  color: white;
-  transition: 0.5s;
-  text-transform: uppercase;
+.project-container .name {
+  padding-bottom: 10px;
+  text-transform: capitalize;
   font-size: 25px;
-  font-weight: normal;
-  z-index: 1;
-  transform: translateY(250px);
 }
 
-.project-box .project-name h3:hover {
-  cursor: pointer;
+.project-box {
+  display: flex;
 }
 
-.project-box:hover .project-name h3 {
-  transform: translateY(0);
+.project-box .imgBox {
+  width: 100%;
+}
+
+.project-box .imgBox img {
+  width: 100%;
+  height: auto;
+}
+
+.project-box .img3 {
+  width: 50%;
+}
+
+.project-box .descriptionBox {
+  padding: 0 30px 30px 30px;
+}
+
+.descriptionBox .description h3 {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.description p:nth-child(2) {
+  padding-top: 10px;
+}
+
+.description p span {
+  font-weight: bold;
+}
+
+.project-container .line {
+  width: 100%;
+  margin: 0 auto 50px;
 }
 
 footer {
   position: absolute;
-  bottom: 0;
   width: 100vw;
   height: auto;
-  padding-top: 25px;
+  padding-top: 30px;
   color: #fff;
-  background-color: #847F7F;
+  background-color: #A5ADB0;
 }
 
 footer .contact-box {
@@ -255,10 +289,11 @@ footer .contact-box {
 
 .contact-box p {
   padding-top: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 20px;
+  padding-bottom: 45px;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #484040;
 }
 
 .contact {
@@ -268,18 +303,25 @@ footer .contact-box {
 }
 
 .contact a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   margin: 0 20px;
+  transition: color .4s ease;
 }
 
 .contact a i {
   font-size: 2rem;
-  transition: color .4s ease;
 }
 
-.contact a:hover i {
-  color: rgb(64, 169, 255);
+.contact a span {
+  padding-left: 15px;
+  font-size: 1.1rem;
+}
+
+.contact a:hover {
+  color: #FFC000;
 }
 
 .footer-bottom {
@@ -289,76 +331,142 @@ footer .contact-box {
 .footer-bottom p {
   text-align: center;
   font-size: 0.9rem;
-  margin: 20px 0 8px 0;
+  margin: 30px 0;
+  color: #484040;
 }
 
-@media (max-width: 500px) {
-  .topic {
-    font-size: 40px;
+@media (max-width: 1000px) {
+  .welcoming-page {
+    flex-direction: column;
   }
   
+  .welcoming-page-text {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .welcoming-page-text h1,
+  .welcoming-page-text div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .landing-photo-box {
+    margin-left: auto;
+    height: auto;
+  }
+
+  .photo-box img {
+    visibility: hidden;
+  }
+
+  .topic {
+    font-size: 70px;
+  }
+
+  .text {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu a {
+    color: #fff;
+  }
+
+  .containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education,
+  .experience {
+    width: 100%;
+  }
+
+  #certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .project-box {
+    flex-direction: column;
+  }
+
+  .project-box .descriptionBox {
+    padding: 30px 0;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact a {
+    padding-bottom: 10px;
+  }
+
+  .contacts {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .author {
+    padding: 0;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .welcoming-page-text h1,
+  .welcoming-page-text div {
+    width: auto;
+  }
+
+  .welcoming-page-text {
+    padding: 0;
+  }
+
+  .menu a {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .menu li:nth-child(4) {
+    margin: 0;
+  }
+
   .my-page {
     font-size: 20px;
   }
 
-  #about-me,
-  #projects {
-    padding-left: 0;
+  .bigBox {
+    padding: 40px;
   }
 
-  .about-me-text > h2 {
-    padding-left: 50px;
-    font-size: 20px;
+  .textBox h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
   }
-  .box > h3 {
-    font-size: 17px;
+
+  .boxName h3 {
+    text-transform: capitalize;
   }
-  .box > table {
-    font-size: 13px;
-  }
-  .container-box {
-    padding-left: 0;
+
+  .project-box .img3 {
     width: 100%;
-  }
-  tr .data {
-    width: 100px;
-  }
-
-  #projects {
-    padding-left: 0;
-  }
-
-  .projects-container {
-    padding-left: 50px;
-  }
-
-  .project-box {
-    width: 250px;
-    height: 250px;
-    margin: 0 30px 30px 0;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-
-  .project-box .project-name h3 {
-    font-size: 17px;
-  }
-
-  .navbar {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-  .menu li {
-    margin-right: 0;
-    padding-right: 20px;
-  }
-
-  .details {
-    padding-left: 20px;
-  }
-
-  table {
-    padding: 0;
-    padding-right: 20px;
-  }
+}
 }

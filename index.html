@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="height=device-height, 
+                        width=device-width, initial-scale=1.0, 
+                        minimum-scale=1.0, maximum-scale=1.0, 
+                        user-scalable=no, target-densitydpi=device-dpi">
   <title>Portfolio Page</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,156 +16,157 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header id="header_frame">
     <div class="container">
-      <nav class="navbar">
+      <div class="author">
+        <div>Aizhan Dzhumanalieva</div>
+        <div>Frontend Developer</div>
+      </div>
+      <div class="navbar">
         <ul class="menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about-me">ABOUT ME</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#footer">CONTACT</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#about-me">about me</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#footer">contact</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
   <main>
     <!-- Landing -->
     <div class="welcoming-page" id="home">
       <div class="welcoming-page-text">
-        <h1 class="topic">WELCOME</h1>
-        <div class="my-page">to aizhan's portfolio page</div>
-      </div> 
+        <h1 class="topic">welcome</h1>
+        <div class="my-page">I am Aizhan Dzhumanalieva <br> Frontend Developer</div>
+      </div>
+      <div class="landing-photo-box">
+        <div class="photo-box">
+          <img src="./assets/images/landing.png" alt="Author's avatar">
+        </div>
+      </div>
     </div>
 
     <!-- About me Section -->
-    <div id="about-me">
-      <div class="about-me-text">
+    <div id="about-me" class="bigBox">
+      <div class="textBox">
         <h2>about me</h2>
       </div>
-      <div class="container-box">
-        <div class="box">
-          <h3>education</h3>
-          <table>
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td class="data">2018년 9월 - 2021년 2월</td>
-                <td class="details first-child">국민대학교, 한국</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details second-child">국제*동북아시아학과, 대학원</td>
-              </tr>
-              <tr>
-                <td class="data">2015년 9월 - 2017년 6월</td>
-                <td class="details first-child">키르기즈-러시아 슬라빅 대학교, 키르기즈스탄</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details second-child">국제경제 및 무역, 대학원</td>
-              </tr>
-              <tr>
-                <td class="data">2011년 9월 - 2015년 6월</td>
-                <td class="details first-child">키르기즈-러시아 슬라빅 대학교, 키르기즈스탄</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details second-child">거시경제 계획 및 예측, 학부</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="containers">
+        <div class="text">
+          <p  lang="kr">현재 배우고 있는 프런트엔드 개발을 꿈꾸고 있는 아이잔입니다.</p>
+          <p>프런트엔드 개발과 관련이 없는 배경을 가지고 있음에도 불구하고, 프론트엔드를 배우기에 도전하는 것을 두려워하지 않았습니다.</p>
+          <p>그래서 새로운 영역을 탐색하고 새로운 것을 발견하기 시작했으며, 이 분야에서 전문적으로 성장하기로 결심했습니다.</p>
+          <p>인턴십 기간 동안, 플랫폼 팀이 새로운 위치 기반 플랫폼의 UI/UX 디자인을 작업하는 것을 도우면서 사용자 인터페이스와 사용자 경험의 중요성에 대한 전반적인 이해를 얻었습니다.</p>
         </div>
-      </div>
-      <div class="container-box">
-        <div class="box">
-          <h3>work experience</h3>
-          <table>
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td class="data">2021년 6월 - 2021년 8월</td>
-                <td class="details first-child">UI/UX Designer, <span>인턴십</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details work-place">Buenos</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details">다양한 언어와 실시간 번역을 지원하는 새로운 형태의 소셜 미디어를 제공하는 모바일 앱인 Hello 작업 참여;</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details">플랫폼 메뉴를 러시아로 번역;</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details last-child">SNS에 대한 연구</td>
-              </tr>
-              <tr>
-                <td class="data">2020년 7월 - 2021년 3월</td>
-                <td class="details first-child">러시아어-한국어 번역가, <span>아르바이트</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details work-place">신현권세무회계사무소</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details">계약서, 세금 보고서, 청구서, 계정과목, 웹사이트를 한국어에서 러시아어로 번역;</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details last-child">거래처와 연락 (전화응답, 이메일)</td>
-              </tr>
-              <tr>
-                <td class="data">2019년 11월</td>
-                <td class="details first-child">러시아어-한국어 통역가, <span>아르바이트</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="details work-place">경력기자 전문교육 "재외동포언론인 역량강화 전문연수"</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container-box education">
+          <div class="boxName">
+            <h3>education</h3>
+          </div>
+          <div class="line"></div>
+          <div class="box">
+            <p class="data">2018-2021 국제*동북아시아학과 석사 - 국민대학교</p>
+            <p class="data">2015-2017 국제경제 및 무역 석사 - 키르기즈-러시아 슬라빅 대학교 (키르기즈스탄)</p>
+            <p class="data">2011-2015 거시경제 계획 및 예측 학사 - 키르기즈-러시아 슬라빅 대학교 (키르기즈스탄)</p>
+          </div>
         </div>
+        <div class="container-box experience">
+          <div class="boxName">
+            <h3>work experience</h3>
+          </div>
+          <div class="line"></div>
+          <div class="box">
+            <p class="data">2021.6-2021.8 UI/UX Designer 인턴십 - Buenos</p>
+            <p class="details">다양한 언어와 실시간 번역을 지원하는 새로운 형태의 소셜 미디어를 제공하는 모바일 앱인 Hello 작업 참여;
+              <br>플랫폼 메뉴를 러시아로 번역;
+              <br>SNS에 대한 연구
+            </p>
+          </div>
+        </div>
+        <div class="container-box certificate">
+          <div class="boxName">
+            <h3>volunteer work, certificates and award  </h3>
+          </div>
+          <div class="line"></div>
+          <div class="box" id="certificate">
+            <div class="first-children">
+              <p class="data ">2021.4 Test of English for International Communication, TOIEC - 950 points</p>
+              <p class="data ">2021.2 HTML, CSS and JavaScript for Web Developers</p>
+            </div>
+            <div class="second-children">
+              <p class="data">2017.6 정보초청장학생 2017 - 수상</p>
+              <p class="data">2015.12-2016.2 Good Neighbors International, 키르기즈스탄 - 봉사활동</p>
+            </div>
+          </div>
+        </div>        
       </div>
     </div>
 
     <!-- Projects -->
-    <div id="projects">
-      <div class="about-me-text">
+    <div id="projects" class="bigBox">
+      <div class="textBox">
         <h2>projects</h2>
       </div>
       <div class="projects-container">
-        <div class="project-box">
-          <div class="project prj1">
-            <a href="https://github.com/msouldze/frontend-project-lvl1" target="_blank">
-            <img src="./assets/images/calculator-game.png" alt="Git Calculator Game">
-          </a>
+        <div class="project-container">
+          <div class="name">
+            <h3>brain games</h3>
           </div>
-          <div class="project-name calculator">
-            <h3>calculator</h3>
+          <div class="line"></div>
+          <div class="project-box">
+            <div class="imgBox">
+              <a href="https://github.com/msouldze/frontend-project-lvl1" target="_blank"><img src="https://asciinema.org/a/g9bcz6XzKMK1fr5gUcPKBOOkX.svg" /></a>
+            </div>
+            <div class="descriptionBox">
+              <div class="description">
+                <h3>description</h3>
+              </div>
+              <div class="description">
+                <p>브레인 게임즈는 플레이어와 상호작용을 가능하게 하는 다섯 개의 게임 세트이다. 세트는 게임 5개를 포함합니다. JavaScript를 이용하여 처음으로 단순한 게임을 개발해본 경험입니다.</p>
+                <p> <span>이용했던 툴:</span> JavaScript, Node.js, Linux, Git, VSCode</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="project-box">
-          <div class="project prj2">
-            <a href="https://github.com/msouldze/frontend-project-lvl2" target="_blank">
-              <img src="./assets/images/gendifference.png" alt="Git Difference Generator">
-            </a>
-          </div>
-          <div class="project-name gendifference">
+        <div class="project-container">
+          <div class="name">
             <h3>difference generator</h3>
           </div>
-        </div>
-        <div class="project-box">
-          <div class="project prj3">
-            <a href="https://github.com/msouldze/portfolio-page" target="_blank">
-              <img src="./assets/images/portfolio-page.png" alt="Portfolio Page Screenshot">
-            </a>
+          <div class="line"></div>
+          <div class="project-box">
+            <div class="imgBox">
+              <a href="https://github.com/msouldze/frontend-project-lvl2" target="_blank"><img src="https://asciinema.org/a/4R6xp5WLKrK7w1m4UAQUkF0jA.svg" width="1029" height="608"/></a>
+            </div>
+            <div class="descriptionBox">
+              <div class="description">
+                <h3>description</h3>
+              </div>
+              <div class="description">
+                <p>Difference Generator는 두 구성 파일을 비교하고 두 구성 파일 간의 차이를 표시합니다. 파일의 차이를 3개의 스타일로 구성할 수 있습니다.</p>
+                <p><span>이용했던 툴:</span> JavaScript, Node.js, Linux, Git, VSCode</p>            
+              </div>
+            </div>
           </div>
-          <div class="project-name mypage">
+        </div>
+        <div class="project-container">
+          <div class="name">
             <h3>portfolio page</h3>
+          </div>
+          <div class="line"></div>
+          <div class="project-box">
+            <div class="imgBox img3">
+              <a href="https://github.com/msouldze/portfolio-page" target="_blank">
+                <img src="./assets/images/portfolio-page.png" alt="Portfolio Page Screenshot">
+              </a>
+            </div>
+            <div class="descriptionBox">
+              <div class="description">
+                <h3>description</h3>
+              </div>
+              <div class="description">
+                <p>포트폴리오 용도로 제작한 HTML, CSS 기반의 웹사이트입니다.</p>
+                <p><span>이용했던 툴:</span> HTML, CSS, jQuery, Git, VSCode</p> 
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -178,15 +182,19 @@
       <div class="contact">
         <a href="tel:+821021051345">
           <i class="fa fa-phone-alt"></i>
+          <span>+82-10-2105-1345</span>
         </a>
         <a href="mailto: msouldze1@gmail.com">
           <i class="fa fa-envelope"></i>
+          <span>msouldze1@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/aizhan-dzhumanalieva-a31545191/" target="_blank">
           <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
         </a>
         <a href="https://github.com/msouldze" target="_blank">
           <i class="fab fa-github"></i>
+          <span>Github</span>
         </a>
       </div>
       <div class="footer-bottom">
@@ -195,5 +203,14 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 500) {
+        jQuery('#header_frame').css('background-color', '#F3F4F5');
+    } else {
+       jQuery('#header_frame').css('background-color', '#A5ADB0');
+    }
+});
+  </script>
 </body>
 </html>
