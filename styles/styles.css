@@ -468,5 +468,13 @@ footer .contact-box {
 
   .project-box .img3 {
     width: 100%;
-}
+  }
+
+  .education {
+    padding-right: 0;
+  }
+
+  .education .line {
+    width: 100%;
+  }
 }
