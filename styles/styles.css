@@ -267,6 +267,15 @@ p {
   font-weight: bold;
 }
 
+.description p:nth-child(3) {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.description ul {
+  padding: 10px 0 0 20px;
+}
+
 .project-container .line {
   width: 100%;
   margin: 0 auto 50px;
